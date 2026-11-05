@@ -3,7 +3,7 @@
 Count cattle crossing a line in a video. **YOLO** detects the cows, **ByteTrack** gives each one an
 ID across frames, and a line counter you draw on the first frame counts the **IN** and **OUT** crossings.
 
-![Tracking and counting on video 6](docs/results_6.gif)
+![Tracking and counting on video 6](docs/demo.gif)
 
 ## How it works
 
@@ -91,7 +91,7 @@ Tip: draw the line where the cows walk apart, not where they bunch up.
 │   ├── counter.py               # IN/OUT counting + occlusion handover
 │   ├── pipeline.py              # detection → tracking → counting → video output
 │   └── draw.py                  # drawing helpers
-├── docs/results_6.gif           # demo: full result on video 6
+├── docs/demo.gif                # demo: full result on video 6
 └── results/                     # output videos (not tracked by git)
 ```
 
