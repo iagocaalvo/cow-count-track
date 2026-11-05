@@ -3,7 +3,7 @@
 Count cattle crossing a line in a video. **YOLO** detects the cows, **ByteTrack** gives each one an
 ID across frames, and a line counter you draw on the first frame counts the **IN** and **OUT** crossings.
 
-![demo](docs/demo.gif)
+![Tracking and counting on video 6](docs/results_6.gif)
 
 ## How it works
 
@@ -91,7 +91,7 @@ Tip: draw the line where the cows walk apart, not where they bunch up.
 │   ├── counter.py               # IN/OUT counting + occlusion handover
 │   ├── pipeline.py              # detection → tracking → counting → video output
 │   └── draw.py                  # drawing helpers
-├── docs/demo.gif
+├── docs/results_6.gif           # demo: full result on video 6
 └── results/                     # output videos (not tracked by git)
 ```
 
@@ -102,7 +102,7 @@ cameras at the La Cordillera ranch in Rivera, Uruguay (UTEC / UNRaf / FURG). The
 640×352 to 1920×1080 at 30 FPS. The dataset is **not included** in this repository. Place the videos
 anywhere and pass their path with `--video`.
 
-## LIMITATIONS
+## Limitations
 
 - **Overlapping cows are the main source of errors.** When one cow walks behind another, especially
   black cattle against black cattle, the COCO-trained detector often boxes only the front one. The cow
@@ -122,7 +122,7 @@ anywhere and pass their path with `--video`.
 - **Videos that end early:** cows that are tracked but haven't reached the line when the video ends
   are not counted. This is correct, but it means "cows visible" ≠ "cows counted".
 
-## FUTURE UPGRADES
+## Future upgrades
 
 - **Fine-tune the detector on these cattle, the main fix for overlap.** Train the same small
   `yolo11s` (same speed) on frames from these videos, labelling the partly hidden cows behind other
