@@ -1,0 +1,10 @@
+# ByteTrack settings tuned for cattle (frequent occlusion, similar-looking animals).
+# Docs: https://docs.ultralytics.com/modes/track
+
+tracker_type: bytetrack
+track_high_thresh: 0.25 # 1st association stage: detections with score >= this
+track_low_thresh: 0.1   # 2nd stage: low-score detections (0.1-0.25) used to keep tracks alive
+new_track_thresh: 0.5   # min score to start a new track (higher -> fewer spurious IDs from partial cows)
+track_buffer: 90        # frames a lost track is kept (90 = 3 s at 30 FPS) to survive occlusions
+match_thresh: 0.8       # IoU-cost threshold for matching
+fuse_score: True        # fuse detection score into the matching cost
