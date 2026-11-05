@@ -1,0 +1,17 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Model weights (downloaded automatically)
+*.pt
+
+# Dataset (not redistributed) and outputs
+vacas-uruguay/
+results/*
+!results/.gitkeep
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
