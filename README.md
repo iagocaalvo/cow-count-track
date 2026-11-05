@@ -150,3 +150,9 @@ anywhere and pass their path with `--video`.
 
 This project is licensed under the **GNU AGPL-3.0** (see [LICENSE](LICENSE)), the same license as
 Ultralytics YOLO, which it builds on.
+
+## Dataset credit
+
+E. de los Santos, B. de Vargas Guterres, R. Bedin Grando, *Counting cattle Dataset: Supporting
+livestock Multi Object Tracking*, UTEC / UNRaf / FURG, with the La Cordillera ranch (Rivera,
+Uruguay). The dataset is not redistributed here. The demo footage is used with attribution.
