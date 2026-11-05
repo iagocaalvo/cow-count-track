@@ -5,6 +5,11 @@ ID across frames, and a line counter you draw on the first frame counts the **IN
 
 ![Tracking and counting on video 6](docs/demo.gif)
 
+<sub>Demo footage: video 6 of the <a href="https://doi.org/10.17632/dk54zg67dd.1"><i>Counting cattle
+Dataset</i></a> by E. de los Santos, B. de Vargas Guterres and R. Bedin Grando,
+<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Modified: tracking boxes, IDs,
+trails, counting line and counters added; converted to GIF.</sub>
+
 ## How it works
 
 ```
@@ -97,10 +102,12 @@ Tip: draw the line where the cows walk apart, not where they bunch up.
 
 ## Dataset
 
-The project was developed with the *Counting cattle Dataset*: Brangus cattle filmed with phone
-cameras at the La Cordillera ranch in Rivera, Uruguay (UTEC / UNRaf / FURG). The 7 videos range from
-640×352 to 1920×1080 at 30 FPS. The dataset is **not included** in this repository. Place the videos
-anywhere and pass their path with `--video`.
+The project was developed with the
+[*Counting cattle Dataset*](https://doi.org/10.17632/dk54zg67dd.1) (Mendeley Data, CC BY 4.0):
+Brangus cattle filmed with phone cameras at the La Cordillera ranch in Rivera, Uruguay
+(UTEC / UNRaf / FURG). The 7 videos used here range from 640×352 to 1920×1080 at 30 FPS. The dataset
+is **not included** in this repository. Download it from Mendeley Data, place the videos anywhere and
+pass their path with `--video`. See [Dataset credit](#dataset-credit) for the full attribution.
 
 ## Limitations
 
@@ -148,11 +155,24 @@ anywhere and pass their path with `--video`.
 
 ## License
 
-This project is licensed under the **GNU AGPL-3.0** (see [LICENSE](LICENSE)), the same license as
-Ultralytics YOLO, which it builds on.
+The source code is licensed under the **GNU AGPL-3.0** (see [LICENSE](LICENSE)), the same license
+as Ultralytics YOLO, which it builds on.
+
+The demo GIF (`docs/demo.gif`) is not covered by the AGPL. It is an adaptation of footage from the
+*Counting cattle Dataset* and is shared under
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), the dataset's license.
+Output videos made from that dataset are adaptations too and keep the same attribution requirements.
 
 ## Dataset credit
 
-E. de los Santos, B. de Vargas Guterres, R. Bedin Grando, *Counting cattle Dataset: Supporting
-livestock Multi Object Tracking*, UTEC / UNRaf / FURG, with the La Cordillera ranch (Rivera,
-Uruguay). The dataset is not redistributed here. The demo footage is used with attribution.
+- **Title:** *Counting cattle Dataset: Supporting livestock Multi Object Tracking* (Version 1)
+- **Authors:** Ernesto de los Santos, Bruna de Vargas Guterres, Ricardo Bedin Grando
+  (Universidad Tecnológica del Uruguay – UTEC, Universidad Nacional de Rafaela – UNRaf,
+  Universidade Federal do Rio Grande – FURG), recorded at the La Cordillera ranch (Rivera, Uruguay)
+- **Source:** Mendeley Data, 2025, <https://doi.org/10.17632/dk54zg67dd.1>
+- **License:** [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+- **Changes:** the demo GIF shows video 6 with tracking boxes, IDs, trails, the counting line and
+  IN / OUT counters drawn on top, converted to GIF. The dataset itself is not redistributed
+  here.
+
+The dataset authors are not affiliated with this project and do not endorse it.
