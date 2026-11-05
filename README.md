@@ -3,13 +3,27 @@
 Count cattle crossing a line in a video. **YOLO** detects the cows, **ByteTrack** gives each one an
 ID across frames, and a line counter you draw on the first frame counts the **IN** and **OUT** crossings.
 
-![Tracking and counting on video 6](docs/demo.gif)
+![Tracking and counting on video 4](docs/demo.gif)
 
-<sub>Demo footage: video 6 of the <a href="https://doi.org/10.17632/dk54zg67dd.1"><i>Counting cattle
+<sub>Demo footage: video 4 of the <a href="https://doi.org/10.17632/dk54zg67dd.1"><i>Counting cattle
 Dataset</i></a> by E. de los Santos, B. de Vargas Guterres and R. Bedin Grando,
 <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
 
 <sub>Modified: tracking boxes, IDs, trails, counting line and counters added; converted to GIF.</sub>
+
+## Possible uses
+
+- **Herd counts at gates and chutes:** count animals moving between paddocks, into a corral or
+  through a loading chute, without a person counting by hand.
+- **Loading and unloading trucks:** check that the number of cattle shipped or received matches the
+  paperwork.
+- **Daily inventory checks:** film the herd passing a fixed point (e.g. on the way to water or
+  milking) to spot missing animals early.
+- **Pasture rotation records:** log how many animals go in and out of each paddock over time.
+- **Footage from phones or drones:** count from ordinary video, no ear tags or RFID readers needed.
+- **Other animals:** COCO also includes sheep, horses and other classes, so the same pipeline can
+  count other livestock by changing `COW_CLASS_ID` in `src/cowcount/pipeline.py`, or with a
+  fine-tuned model.
 
 ## How it works
 
@@ -97,7 +111,7 @@ Tip: draw the line where the cows walk apart, not where they bunch up.
 │   ├── counter.py               # IN/OUT counting + occlusion handover
 │   ├── pipeline.py              # detection → tracking → counting → video output
 │   └── draw.py                  # drawing helpers
-├── docs/demo.gif                # demo: full result on video 6
+├── docs/demo.gif                # demo: full result on video 4
 └── results/                     # output videos (not tracked by git)
 ```
 
@@ -172,7 +186,7 @@ Output videos made from that dataset are adaptations too and keep the same attri
   Universidade Federal do Rio Grande – FURG), recorded at the La Cordillera ranch (Rivera, Uruguay)
 - **Source:** Mendeley Data, 2025, <https://doi.org/10.17632/dk54zg67dd.1>
 - **License:** [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
-- **Changes:** the demo GIF shows video 6 with tracking boxes, IDs, trails, the counting line and
+- **Changes:** the demo GIF shows video 4 with tracking boxes, IDs, trails, the counting line and
   IN / OUT counters drawn on top, converted to GIF. The dataset itself is not redistributed
   here.
 
