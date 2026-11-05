@@ -7,8 +7,9 @@ ID across frames, and a line counter you draw on the first frame counts the **IN
 
 <sub>Demo footage: video 6 of the <a href="https://doi.org/10.17632/dk54zg67dd.1"><i>Counting cattle
 Dataset</i></a> by E. de los Santos, B. de Vargas Guterres and R. Bedin Grando,
-<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Modified: tracking boxes, IDs,
-trails, counting line and counters added; converted to GIF.</sub>
+<a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+
+<sub>Modified: tracking boxes, IDs, trails, counting line and counters added; converted to GIF.</sub>
 
 ## How it works
 
